@@ -1,0 +1,9 @@
+.transition {
+  transition-duration: 0.3s;
+  transition-property: all;
+}
+.clearfix {
+  content: " ";
+  clear: both;
+  display: table;
+}
