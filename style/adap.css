@@ -387,7 +387,7 @@
   }
   .nav-panel__main-nav {
     position: fixed;
-    right: -130px;
+    right: -150px;
     top: 66px;
     margin-top: 0;
     -webkit-transition-duration: 0.3s;

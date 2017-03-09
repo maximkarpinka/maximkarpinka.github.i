@@ -1,4 +1,15 @@
+
+import '../style/mixins.less';
+import '../style/reset.less';
+
+import '../style/widget.less'
+import '../style/style.less';
+import '../style/adap.less';
+
 window.addEventListener('DOMContentLoaded', function(){
+
+
+
 
 	var Widget = function(){
 		this.b = document.body;
