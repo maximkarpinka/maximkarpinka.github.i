@@ -43,6 +43,7 @@ content: " ";
 .header{
 	height: 870px;
 	width: 100%;
+	background-size: 45% auto, 100% auto;
 	background-image:url(../img/header-slider-label.png),
 	url(../img/header-slider.png);
 	background-repeat:no-repeat;
@@ -319,6 +320,7 @@ color:@textGray;
 		float:left;
 		width: 50%;
 		background-image:url(../img/make-every-img.png);
+		background-size: 100% 100%;
 		background-position:left bottom;
 	}
 
@@ -581,6 +583,11 @@ cursor: pointer;
 			.transition;
 			display: block;
 		}
+	}
+
+
+	&_big{
+		background-size: 100% 100%;
 	}
 
 }
