@@ -179,7 +179,7 @@
     background-size: 30%;
   }
   .service-unit__title {
-    padding-top: 90px;
+    padding-top: 120px;
     font-size: 1em;
   }
   .galery__item {
@@ -420,6 +420,11 @@
   }
   .openMenu .openMenu-list-menu {
     right: 7px;
+  }
+  .header__left-arrow,
+  .header__right-arrow {
+    top: auto;
+    bottom: 20%;
   }
 }
 @media screen and (max-width: 479px) {

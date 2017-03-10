@@ -50,6 +50,7 @@ content: " ";
 	background-image:url(../img/header-slider-label.png),
 	url(../img/header-slider.png);
 	background-repeat:no-repeat;
+	position: relative;
 	background-position:center;
 
 	&__nav-panel{
@@ -59,6 +60,43 @@ content: " ";
 	}
 	&__slider{
 		width: 100%;
+	}
+
+	&__left-arrow{
+		position: absolute;
+		margin: auto;
+		left: 20px;
+		top: 0;
+		bottom: 0;
+		height: 40px;
+		width: 40px;
+		background-color: transparent;
+		border:4px solid #fff;
+		border-radius: 5px;
+		cursor: pointer;
+		-webkit-transform:rotate(45deg);
+		transform:rotate(45deg);
+		border-right: none;
+		border-top: none;
+	}
+
+	&__right-arrow{
+		position: absolute;
+		margin: auto;
+		right: 20px;
+		top: 0;
+		bottom: 0;
+		height: 40px;
+		width: 40px;
+		background-color: transparent;
+		border:4px solid #fff;
+		border-radius: 5px;
+		cursor: pointer;
+		-webkit-transform:rotate(45deg);
+		transform:rotate(45deg);
+		border-left: none;
+		border-bottom: none;
+
 	}
 }
 
@@ -348,9 +386,9 @@ color:@textGray;
 		height: 755px;
 		float:left;
 		width: 50%;
-		background-image:url(../img/make-every-img.png);
-		background-size: 100% 100%;
-		background-position:left bottom;
+		position: relative;
+
+
 	}
 
 	&__right{
@@ -358,6 +396,20 @@ color:@textGray;
 		width: 50%;
 		background-color:#fff2ed;
 		height: 755px;
+	}
+}
+
+.left-panel-bcg{
+width: 100%;
+top: 0;
+bottom: 0;
+position: absolute;
+overflow: hidden;
+
+	&__img{
+		min-width: 900px;
+		height: auto;
+
 	}
 }
 
@@ -396,12 +448,17 @@ color:@textGray;
 	height: 800px;
 	position: relative;
 	width: 100%;
-	background-image:url(../img/cake-lemmon.png);
-	background-size:100% 100%;
-	background-repeat:no-repeat;
-	background-position:center;
+
+	&__bcg{
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+
+	}
 
 	&__left-arrow{
+		z-index: 10;
 		position: absolute;	
 		display: block;
 		left: 5%;
@@ -422,6 +479,7 @@ color:@textGray;
 
 	}
 	&__right-arrow{
+		z-index: 10;
 		position: 	absolute;
 		display: block;	
 		right: 5%;
@@ -443,12 +501,23 @@ color:@textGray;
 	}
 
 	&__content{
-		
+		position: relative;
+		z-index: 10;
 		width: 1285px;
 		margin: 0 auto;
 		padding-top: 80px;
 		.clearfix;
 
+	}
+}
+
+.price-bcg{
+	overflow: hidden;
+
+	&__img{
+		width: 100%;
+		min-width:1700px;
+	height: auto;
 	}
 }
 
@@ -505,13 +574,6 @@ float:left;
 		}
 
 	}
-
-}
-
-
-
-.lemmon-cake-info{
-
 
 }
 
@@ -1090,9 +1152,6 @@ margin-top: 10px;
 	width: 100%;
 	height: 550px;
 	position: relative;
-	background-image:url(../img/MAP.png);
-	background-size:100% auto;
-	background-position:center;
 
 		&__center-label{
 			position: absolute;
@@ -1116,7 +1175,7 @@ margin-top: 10px;
 
 
 .maps-label{
-	width: 185px;
+	width: 190px;
 	height: 20px;
 	font-family: @nB;
 	color:#fff;
