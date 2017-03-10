@@ -6,6 +6,9 @@ import '../style/widget.less'
 import '../style/style.less';
 import '../style/adap.less';
 
+import "../font/font-awesome-4.7.0/css/font-awesome.css";
+
+
 window.addEventListener('DOMContentLoaded', function(){
 
 
